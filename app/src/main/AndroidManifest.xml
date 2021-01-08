@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.QR">
-        <activity android:name=".ObjectDetailsActivity"></activity>
+        <activity android:name=".QrDetailsActivity"></activity>
+        <activity android:name=".QrReady2Activity" />
+        <activity android:name=".QrReadyActivity" />
+        <activity android:name=".ObjectDetailsActivity" />
         <activity android:name=".SignInActivity" />
         <activity android:name=".dashboardSignedIn" />
         <activity android:name=".dashboardSignedOut" />
