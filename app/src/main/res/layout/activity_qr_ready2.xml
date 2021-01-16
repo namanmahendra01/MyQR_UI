@@ -62,12 +62,16 @@
                         android:layout_below="@+id/scanImage"
                         android:layout_marginTop="10dp"
                         android:id="@+id/shareLayout">
-
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/shareRl"
+                            >
                         <RelativeLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
-                            android:layout_centerHorizontal="true"
                             android:id="@+id/shareRl1"
                             >
                             <ImageView
@@ -89,11 +93,40 @@
                                 android:textColor="@color/appcolor"/>
 
                         </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="10dp"
+                                android:id="@+id/shareRl3"
+                                >
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:src="@drawable/ic_downoad"
+                                    android:layout_centerHorizontal="true"
+                                    android:id="@+id/shareImg"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+
+                                    android:id="@+id/shareTxt"
+                                    android:layout_below="@+id/shareImg"
+                                    android:text="Download"
+                                    android:textSize="22sp"
+                                    android:textColor="@color/appcolor"/>
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
                         <RelativeLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_below="@+id/shareRl1"
+                            android:layout_below="@+id/shareRl"
                             android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+
                             android:id="@+id/shareRl2"
                             >
                             <TextView

@@ -6,15 +6,11 @@
     android:layout_height="wrap_content"
     android:layout_marginBottom="20dp"
     tools:context=".SignUpActivity">
-
-    <ImageView
-        android:id="@+id/upperBlock"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="167dp"
-        android:scaleType="centerCrop"
-        android:layout_alignParentEnd="true"
-        android:src="@drawable/ic_upper_block" />
-
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_upper_block"
+        android:id="@+id/upRel">
 
     <ImageView
         android:layout_width="45dp"
@@ -23,26 +19,38 @@
         android:src="@drawable/ic_back_arrow" />
 
     <ImageView
-        android:layout_width="204dp"
-        android:layout_height="110dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_alignBottom="@+id/upperBlock"
+        android:id="@+id/logo"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="103dp"
         android:layout_marginTop="31dp"
         android:layout_marginEnd="104dp"
-        android:layout_marginBottom="26dp"
-        android:src="@drawable/ic_square" />
+        android:src="@drawable/ic_logo_final_square" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MyQR"
+            android:textColor="@color/white"
+            android:fontFamily="@font/appfont"
+            android:textSize="34sp"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Log in"
+        android:text="Log in :"
         android:textColor="@color/appcolor"
         android:id="@+id/Signup"
         android:textSize="22sp"
-        android:layout_below="@+id/upperBlock"
+        android:textStyle="bold"
+        android:layout_below="@+id/upRel"
         android:layout_margin="10dp"
         />
 
@@ -63,6 +71,7 @@
             android:layout_height="wrap_content"
             app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp"
+            app:startIconDrawable="@drawable/ic_email"
 
             >
             <com.google.android.material.textfield.TextInputEditText
@@ -90,6 +99,7 @@
             app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp"
             app:passwordToggleEnabled="true"
+            app:startIconDrawable="@drawable/ic_pass"
 
             >
             <com.google.android.material.textfield.TextInputEditText
@@ -122,12 +132,37 @@
             android:layout_marginTop="30dp"/>
     </LinearLayout>
 
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/linearLayout1"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/t1"
+            android:textColor="#451B1919"
+            android:textSize="18sp"
+
+            android:text="Forgot your password?  "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/t1"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/appcolor"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Reset"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
         android:gravity="center"
         >
         <TextView

@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightblue"
     tools:context=".dashboardSignedOut">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -12,9 +11,13 @@
         android:id="@+id/topbar">
         <include layout="@layout/topbar_snippet"/>
     </RelativeLayout>
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_below="@+id/topbar"
+        android:background="@drawable/backgrround_drop"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_marginTop="50dp"
         android:layout_height="match_parent">
         <androidx.cardview.widget.CardView
@@ -125,11 +128,13 @@
         </androidx.cardview.widget.CardView>
 
     </RelativeLayout>
+    </ScrollView>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/ic_bottom_round">
+        android:id="@+id/e"
+        android:background="@drawable/ic_bottom_round_login">
 
         <TextView
             android:layout_width="wrap_content"
@@ -138,9 +143,11 @@
             android:fontFamily="@font/appfont"
             android:textColor="@color/white"
             android:id="@+id/username"
+            android:gravity="bottom"
             android:textSize="22sp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="10dp"
+          />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

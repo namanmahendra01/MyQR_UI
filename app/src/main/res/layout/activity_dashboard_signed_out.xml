@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightblue"
     tools:context=".dashboardSignedOut">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -12,9 +11,14 @@
         android:id="@+id/topbar">
         <include layout="@layout/topbar_snippet"/>
     </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@drawable/backgrround_drop"
+        android:layout_below="@+id/topbar"
+
+        android:layout_height="wrap_content">
 <RelativeLayout
     android:layout_width="match_parent"
-    android:layout_below="@+id/topbar"
     android:layout_marginTop="50dp"
     android:layout_height="match_parent">
     <androidx.cardview.widget.CardView
@@ -125,6 +129,7 @@
     </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
+    </ScrollView>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -136,6 +141,7 @@
             android:text="Login to generate QR"
             android:fontFamily="@font/appfont"
             android:textColor="@color/white"
+            android:visibility="gone"
             android:id="@+id/qrNumber"
             android:textSize="22sp"
             android:layout_centerHorizontal="true"

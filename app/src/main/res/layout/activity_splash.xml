@@ -10,7 +10,19 @@
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/ic_logo"
+        android:id="@+id/log"
+        android:src="@drawable/ic_logo_final_circle"
         android:layout_centerInParent="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/log"
+        android:text="MyQR"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/appcolor"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/appfont"
+        />
 
 </RelativeLayout>

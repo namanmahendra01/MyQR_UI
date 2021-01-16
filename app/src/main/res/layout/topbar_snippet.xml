@@ -19,5 +19,19 @@
         android:textColor="@color/white"
         android:textSize="35sp"
         android:layout_centerInParent="true"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/view1"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/white"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/view1"
+        android:id="@+id/view2"/>
 
 </RelativeLayout>
